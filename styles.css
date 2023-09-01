@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.5s linear;
+}
+input {
+  visibility: hidden;
+}
+label {
+  background-color: #bebebe;
+  border-radius: 25px;
+  height: 50px;
+  width: 100px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.5s linear;
+}
+.circle {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.5s linear, background-color 0.5s linear;
+  left: 5px;
+}
+
+.dark-mode-label {
+  background-color: #fff;
+}
+.dark-mode-circle {
+  background-color: #000;
+  left: 55px;
+}
+.dark-mode-body {
+  background-color: #111;
+}
